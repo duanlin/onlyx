@@ -414,8 +414,8 @@ int sysShellRoutine(void)
 					}
 				}
 			}
-			// DEL
-			else if(c == '\177')
+			// Backspace or DEL
+			else if((c == '\010') || (c == '\177'))
 			{
 				if(strlen(sInputBuff.line))
 				{
